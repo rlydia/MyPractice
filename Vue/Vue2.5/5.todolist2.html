@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>todolist</title>
+  <script src="./vue.js"></script>
+</head>
+<body>
+  <div id="root">
+    <div>
+      <input v-model="inputValue"/>
+      <button @click="handleSubmit">提交</button>
+    </div>
+    <!-- <ul>
+      <li v-for="(item, index) of list" :key="index">
+        {{item}}
+        <span style="color:red; cursor: pointer;" @click="() => handleDelete(index)">x</span>
+      </li>
+    </ul> -->
+    <ul>
+      <!-- <todo-item></todo-item> -->
+      <todo-item 
+        v-for="(item, index) of list" 
+        :key="index"
+        :content="item"
+        :index="index"
+        @delete="handleDelete"
+      >
+      </todo-item>
+    </ul>
+  </div>
+  <script>
+    Vue.component('todo-item', {
+      props: ['content', "index"],
+      template: `<li> 
+        {{content}} {{index}}
+        <span style="color:red; cursor: pointer;" @click="handleClick">x</span>
+      </li>`,
+      methods: {
+        handleClick: function() {
+          this.$emit('delete', this.index)    // 子组件向外部进行发布
+        }
+      }
+    })
+    // var TodoItem = {
+    //   template: '<li>item</li>'
+    // }
+    new Vue({
+      el: "#root",
+      // components: {
+      //   'todo-item': TodoItem
+      // },
+      data: {
+        inputValue: '',
+        list: []
+      },
+      methods: {
+        handleSubmit: function() {
+          if (this.inputValue) {
+            // this.list.push(this.inputValue)
+            this.list = [...this.list, this.inputValue]
+            this.inputValue = ''
+          }
+        },
+        handleDelete: function(index) {
+          this.list.splice(index, 1)
+        }
+      }
+    });
+  </script>
+</body>
+</html>

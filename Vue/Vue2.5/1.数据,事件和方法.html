@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue入门</title>
+  <script src="./vue.js"></script>
+</head>
+<body>
+  <div id="root">
+    <!-- v-on指令，绑定click事件 -->
+    <div v-on:click="handleClick"> {{ content }} </div>
+  </div>
+
+  <script>
+    new Vue({
+      el: "#root",
+      // template: "<h1> hello {{msg}} </h1>",
+      data: {
+        content: "hello"
+      },
+      methods: {
+        handleClick: function() {
+          this.content = "world"
+        }
+      }
+    });
+  </script>
+</body>
+</html>
