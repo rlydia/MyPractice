@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "nodejs-websocket": "^1.7.2"
+  },
+  "name": "04-websocket-chatroom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
