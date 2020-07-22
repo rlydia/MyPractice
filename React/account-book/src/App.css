@@ -1,0 +1,48 @@
+.App {
+  background: #efefef;
+}
+.App-header {
+  background-color: #222;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* align-items: center; */
+  justify-content: center;
+  color: white;
+}
+
+.App-header .title {
+  margin: auto;
+  margin-top: 12px;
+  font-size: calc(15px + 2vmin);
+}
+
+.App-header .col {
+  font-size: calc(8px + 1vmin);
+}
+
+.App-header .dropdown-menu {
+  min-width: 12rem;
+}
+
+.content-area {
+  background: #fff;
+}
+
+.TotalPriceWrapper div {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.dropdown .dropdown-menu {
+  left: 25%;
+}
+
+.list-group a {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: 'center'
+}
