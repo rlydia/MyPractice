@@ -2,7 +2,7 @@
 
 思考：这种网页版的聊天功能应该如何去实现？？
 
-![image-20200601155301776](.\mdImg\image-20200601155301776.png)
+![image-20200601155301776](https://github.com/rlydia/MyPractice/tree/master/websocket-chatroom/mdImg/1.png)
 
 http不能实现这种聊天效果，因为http是基于请求-响应模型的；只有小王请求了服务器，服务器才能给小王响应，而不能主动给小妹响应。
 
@@ -18,7 +18,7 @@ http不能实现这种聊天效果，因为http是基于请求-响应模型的�
 
 早期没有websocket时，通过**ajax轮询(基于HTTP协议的)**，由于http请求，服务器无法给浏览器主动发送数据，因此需要浏览器定时的给服务器发送请求（比如1s一次）,服务器把最新的数据响应给浏览器。这种模式的缺点就是浪费性能和资源。(在一次请求-响应后，断开。再次请求-响应...；http请求响应都会有 三次握手，很耗时间与性能)
 
-![](.\mdImg\websocket.png)
+![](https://github.com/rlydia/MyPractice/tree/master/websocket-chatroom/mdImg/websocket.png)
 
 
 
@@ -143,7 +143,7 @@ const websocket = new WebSocket(URL)
 
 # websocket开发聊天室程序
 
-![image-20200601195718329](.\mdImg\image-20200601195718329.png)
+![image-20200601195718329](https://github.com/rlydia/MyPractice/tree/master/websocket-chatroom/mdImg/2.png)
 
 ```
 yarn init -y
@@ -382,9 +382,9 @@ io.js"></script>
 </body>
 ```
 
-![image-20200601221040302](.\mdImg\image-20200601221040302.png)
+![image-20200601221040302](https://github.com/rlydia/MyPractice/tree/master/websocket-chatroom/mdImg/3.png)
 
-![image-20200601221115661](.\mdImg\image-20200601221115661.png)
+![image-20200601221115661](https://github.com/rlydia/MyPractice/tree/master/websocket-chatroom/mdImg/4.png)
 
 
 
@@ -393,7 +393,7 @@ io.js"></script>
 - 浏览器给服务器发送数据(socket.emit)，浏览器触发服务器监听的事件(socket.on)。
 - 服务器给浏览器发送数据(socket.emit)，只要触发浏览器监听的事件即可(socket.on)
 
-![image-20200602094523597](.\mdImg\image-20200602094523597.png)
+![image-20200602094523597](https://github.com/rlydia/MyPractice/tree/master/websocket-chatroom/mdImg/5.png)
 
 ## express
 
@@ -455,7 +455,7 @@ io.js"></script>
 </script>
 ```
 
-![image-20200602101401927](.\mdImg\image-20200602101401927.png)
+![image-20200602101401927](https://github.com/rlydia/MyPractice/tree/master/websocket-chatroom/mdImg/6.png)
 
 
 

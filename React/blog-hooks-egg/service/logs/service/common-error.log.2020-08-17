@@ -1,0 +1,66 @@
+2020-08-17 08:56:27,004 ERROR 8292 nodejs.ClusterClientNoResponseError: client no response in 22373572ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 8292
+hostname: DESKTOP-LALNQAU
+
+2020-08-17 11:28:59,138 ERROR 8292 nodejs.ClusterClientNoResponseError: client no response in 3931251ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 8292
+hostname: DESKTOP-LALNQAU
+
+2020-08-17 15:05:15,280 ERROR 8292 nodejs.ClusterClientNoResponseError: client no response in 5031439ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 8292
+hostname: DESKTOP-LALNQAU
+
+2020-08-17 19:43:34,668 ERROR 8292 nodejs.ClusterClientNoResponseError: client no response in 3726407ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 8292
+hostname: DESKTOP-LALNQAU
+
+2020-08-17 20:16:41,802 ERROR 17912 [-/127.0.0.1/-/67ms GET /default/getListById/item_1] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'item_1' in 'where clause'
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id WHERE type_id=item_1
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'item_1' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,FROM_UNIXTIME(article.addTime,'%Y-%m-%d %H:%i:%s' ) as addTime,article.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id WHERE type_id=item_1"
+headers: {"Access-Control-Allow-Origin":"http://localhost:3000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_BAD_FIELD_ERRORError"
+pid: 17912
+hostname: DESKTOP-LALNQAU
+

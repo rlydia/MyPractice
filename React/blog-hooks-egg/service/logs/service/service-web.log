@@ -1,0 +1,645 @@
+2020-08-21 00:51:17,093 ERROR 16308 [-/127.0.0.1/-/127ms GET /default/getArticleById/undefined] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.article_content as article_content,article.addTime as addTime,article.view_count as view_count,type.typeName as typeName,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id=undefined
+code: "ER_BAD_FIELD_ERROR"
+errno: 1054
+sqlMessage: "Unknown column 'undefined' in 'where clause'"
+sqlState: "42S22"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.article_content as article_content,article.addTime as addTime,article.view_count as view_count,type.typeName as typeName,type.id as typeId FROM article LEFT JOIN type ON article.type_id = type.Id WHERE article.id=undefined"
+name: "ER_BAD_FIELD_ERRORError"
+pid: 16308
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 17:32:34,333 ERROR 116 [-/127.0.0.1/-/151ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '选择类型' for column 'type_id' at row 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES('选择类型', '22222222222', '222222222222222222222', '22222222222222', 1599667200000, 1096)
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect integer value: '选择类型' for column 'type_id' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES('选择类型', '22222222222', '222222222222222222222', '22222222222222', 1599667200000, 1096)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 116
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 17:32:40,530 ERROR 116 [-/127.0.0.1/-/8ms POST /admin/addArticle] nodejs.ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: '选择类型' for column 'type_id' at row 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES('选择类型', '22222222222', '222222222222222222222', '22222222222222', 1599667200000, 1092)
+code: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELD"
+errno: 1366
+sqlMessage: "Incorrect integer value: '选择类型' for column 'type_id' at row 1"
+sqlState: "HY000"
+index: 0
+sql: "INSERT INTO `article`(`type_id`, `title`, `article_content`, `introduce`, `addTime`, `view_count`) VALUES('选择类型', '22222222222', '222222222222222222222', '22222222222222', 1599667200000, 1092)"
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_TRUNCATED_WRONG_VALUE_FOR_FIELDError"
+pid: 116
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:11:10,652 ERROR 2392 [-/127.0.0.1/-/12ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id O' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimetype.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id O' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimetype.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 2392
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:11:14,313 ERROR 2392 [-/127.0.0.1/-/1ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id O' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimetype.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id O' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimetype.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 2392
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:11:30,944 ERROR 2392 [-/127.0.0.1/-/2ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id O' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimetype.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id O' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimetype.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 2392
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:11:45,689 ERROR 2392 [-/127.0.0.1/-/3ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id O' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimetype.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id O' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimetype.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 2392
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:12:27,306 ERROR 5724 [-/127.0.0.1/-/15ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id O' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimetype.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id O' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimetype.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 5724
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:12:34,108 ERROR 5724 [-/127.0.0.1/-/2ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id O' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimetype.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id O' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimetype.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 5724
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:33:16,201 ERROR 15708 [-/127.0.0.1/-/35ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 15708
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:33:28,195 ERROR 15708 [-/127.0.0.1/-/1ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 15708
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:33:41,295 ERROR 15708 [-/127.0.0.1/-/4ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 15708
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:33:59,122 ERROR 15708 [-/127.0.0.1/-/2ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 15708
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:34:03,993 ERROR 15708 [-/127.0.0.1/-/3ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 15708
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:34:17,539 ERROR 15708 [-/127.0.0.1/-/2ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 15708
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:35:17,870 ERROR 15708 [-/127.0.0.1/-/1ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 15708
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:35:20,101 ERROR 15708 [-/127.0.0.1/-/2ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 15708
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:35:32,182 ERROR 15708 [-/127.0.0.1/-/3ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 15708
+hostname: DESKTOP-LALNQAU
+
+2020-09-10 19:38:29,139 ERROR 15708 [-/127.0.0.1/-/3ms GET /admin/getArticleList] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1
+    at Query.Sequence._packetToError (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (events.js:203:13)
+    at addChunk (_stream_readable.js:294:12)
+    --------------------
+    at Pool.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\mysql\lib\Pool.js:199:23)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:12:10)
+    at Pool.ret [as query] (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\pify\index.js:56:34)
+    at RDSClient.proto._query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\client.js:38:20)
+    at RDSClient.proto.query (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\ali-rds\lib\operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:65:19)
+    at D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\co\index.js:54:5
+    sql: SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC 
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT article.id as id,article.title as title,article.introduce as introduce,article.addTime as addTimearticle.view_count as view_count ,type.typeName as typeName FROM article LEFT JOIN type ON article.type_id = type.Id ORDER BY article.id DESC "
+headers: {"Access-Control-Allow-Origin":"http://localhost:9000","Access-Control-Allow-Credentials":"true","vary":"Origin"}
+name: "ER_PARSE_ERRORError"
+pid: 15708
+hostname: DESKTOP-LALNQAU
+

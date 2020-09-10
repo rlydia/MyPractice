@@ -1,0 +1,32 @@
+2020-08-16 16:51:05,034 ERROR 8292 nodejs.ClusterClientNoResponseError: client no response in 723130ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 8292
+hostname: DESKTOP-LALNQAU
+
+2020-08-16 20:26:50,528 ERROR 8292 nodejs.ClusterClientNoResponseError: client no response in 8162488ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 8292
+hostname: DESKTOP-LALNQAU
+
+2020-08-16 23:20:00,136 ERROR 8292 nodejs.ClusterClientNoResponseError: client no response in 6746559ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 8292
+hostname: DESKTOP-LALNQAU
+
+2020-08-17 02:43:31,960 ERROR 8292 nodejs.ClusterClientNoResponseError: client no response in 10809569ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 8292
+hostname: DESKTOP-LALNQAU
+

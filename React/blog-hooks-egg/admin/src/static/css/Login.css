@@ -1,0 +1,12 @@
+html, body { min-width: 1125px;}
+@media only screen and (min-width: 1125px) {
+    html, body { min-width: 1125px; }
+}
+body{
+  background-color: #f0f0f0;
+}
+.login-div {
+  margin: 150px auto;
+  width: 400px;
+}
+

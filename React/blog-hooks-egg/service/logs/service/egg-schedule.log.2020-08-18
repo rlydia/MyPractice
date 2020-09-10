@@ -1,0 +1,24 @@
+2020-08-18 10:23:46,042 INFO 8292 [Timer] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 65174050ms at 2020-08-19 04:30:00.092
+2020-08-18 10:23:46,330 INFO 17912 [Job#15977174258863227763488244003] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js executing by app
+2020-08-18 10:23:46,560 INFO 17912 [Job#15977174258863227763488244003] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js execute succeed, used 186ms
+2020-08-18 15:26:42,427 INFO 8928 [Timer] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 46997576ms at 2020-08-19 04:30:00.003
+2020-08-18 15:26:42,428 INFO 8928 [Timer] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 30797573ms at 2020-08-19 00:00:00.001
+2020-08-18 15:26:42,428 INFO 8928 [Timer] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 30798572ms at 2020-08-19 00:00:01.000
+2020-08-18 16:01:40,261 INFO 9208 [egg-schedule]: register schedule D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-08-18 16:01:40,261 INFO 9208 [egg-schedule]: register schedule D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-08-18 16:01:40,261 INFO 9208 [egg-schedule]: register schedule D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-08-18 16:01:45,245 INFO 17244 [Timer] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 44894760ms at 2020-08-19 04:30:00.005
+2020-08-18 16:01:45,246 INFO 17244 [Timer] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 28694754ms at 2020-08-19 00:00:00.000
+2020-08-18 16:01:45,247 INFO 17244 [Timer] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 28695754ms at 2020-08-19 00:00:01.001
+2020-08-18 16:30:48,620 INFO 12892 [egg-schedule]: register schedule D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-08-18 16:30:48,620 INFO 12892 [egg-schedule]: register schedule D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-08-18 16:30:48,620 INFO 12892 [egg-schedule]: register schedule D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-08-18 16:30:52,147 INFO 6832 [Timer] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 43147856ms at 2020-08-19 04:30:00.003
+2020-08-18 16:30:52,148 INFO 6832 [Timer] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 26947852ms at 2020-08-19 00:00:00.000
+2020-08-18 16:30:52,148 INFO 6832 [Timer] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 26948852ms at 2020-08-19 00:00:01.000
+2020-08-19 00:00:00,128 INFO 6832 [Timer] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 86399912ms at 2020-08-20 00:00:00.036
+2020-08-19 00:00:00,300 INFO 12892 [Job#159776640004327158316206001] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\clean_log.js executing by app
+2020-08-19 00:00:00,673 INFO 12892 [Job#159776640004327158316206001] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\clean_log.js execute succeed, used 333ms
+2020-08-19 00:00:01,002 INFO 12892 [Job#1597766401000271589795723001] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js executing by app
+2020-08-19 00:00:01,092 INFO 12892 [Job#1597766401000271589795723001] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js execute succeed, used 90ms
+2020-08-19 00:00:01,008 INFO 6832 [Timer] D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 86399999ms at 2020-08-20 00:00:01.007

@@ -1,0 +1,47 @@
+2020-08-17 23:59:57,331 INFO 8292 [egg-logrotator] agent logger reload: got log-reload message
+2020-08-18 03:29:11,248 ERROR 8292 nodejs.ClusterClientNoResponseError: client no response in 10810304ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 8292
+hostname: DESKTOP-LALNQAU
+
+2020-08-18 10:23:46,046 ERROR 8292 nodejs.ClusterClientNoResponseError: client no response in 24873487ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (D:\MyPractice\FE\React\blog-hooks-egg\service\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 8292
+hostname: DESKTOP-LALNQAU
+
+2020-08-18 15:26:41,467 INFO 8928 [egg:logger] init all loggers with options: {"dir":"D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-08-18 15:26:41,578 INFO 8928 [egg:core] dump config after load, 101ms
+2020-08-18 15:26:42,272 INFO 8928 [egg-watcher] Start watching: ["D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\app","D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\config","D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\mocks","D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\mocks_proxy","D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\app.js"]
+2020-08-18 15:26:42,272 INFO 8928 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\app"
+2020-08-18 15:26:42,273 INFO 8928 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\config"
+2020-08-18 15:26:42,274 INFO 8928 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\mocks"
+2020-08-18 15:26:42,274 INFO 8928 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\mocks_proxy"
+2020-08-18 15:26:42,274 INFO 8928 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\app.js"
+2020-08-18 15:26:42,276 INFO 8928 [egg-watcher:agent] watcher start success
+2020-08-18 15:26:42,423 INFO 8928 [egg:core] dump config after ready, 35ms
+2020-08-18 16:01:35,486 INFO 17244 [egg:logger] init all loggers with options: {"dir":"D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-08-18 16:01:35,607 INFO 17244 [egg:core] dump config after load, 110ms
+2020-08-18 16:01:36,231 INFO 17244 [egg-watcher] Start watching: ["D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\app","D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\config","D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\mocks","D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\mocks_proxy","D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\app.js"]
+2020-08-18 16:01:36,231 INFO 17244 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\app"
+2020-08-18 16:01:36,232 INFO 17244 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\config"
+2020-08-18 16:01:36,232 INFO 17244 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\mocks"
+2020-08-18 16:01:36,232 INFO 17244 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\mocks_proxy"
+2020-08-18 16:01:36,232 INFO 17244 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\app.js"
+2020-08-18 16:01:36,233 INFO 17244 [egg-watcher:agent] watcher start success
+2020-08-18 16:01:36,305 INFO 17244 [egg:core] dump config after ready, 46ms
+2020-08-18 16:30:44,296 INFO 6832 [egg:logger] init all loggers with options: {"dir":"D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\logs\\service","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"service-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-08-18 16:30:44,372 INFO 6832 [egg:core] dump config after load, 54ms
+2020-08-18 16:30:44,991 INFO 6832 [egg-watcher] Start watching: ["D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\app","D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\config","D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\mocks","D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\mocks_proxy","D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\app.js"]
+2020-08-18 16:30:44,991 INFO 6832 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\app"
+2020-08-18 16:30:44,991 INFO 6832 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\config"
+2020-08-18 16:30:44,991 INFO 6832 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\mocks"
+2020-08-18 16:30:44,992 INFO 6832 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\mocks_proxy"
+2020-08-18 16:30:44,992 INFO 6832 [egg-watcher] Start watching: "D:\\MyPractice\\FE\\React\\blog-hooks-egg\\service\\app.js"
+2020-08-18 16:30:44,992 INFO 6832 [egg-watcher:agent] watcher start success
+2020-08-18 16:30:45,116 INFO 6832 [egg:core] dump config after ready, 63ms

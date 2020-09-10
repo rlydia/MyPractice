@@ -1,0 +1,9 @@
+.project-div {
+  margin-top: .5rem;
+}
+
+.project-div button {
+  border-radius: .3rem;
+  overflow: hidden;
+  margin-bottom: .7rem;
+}
